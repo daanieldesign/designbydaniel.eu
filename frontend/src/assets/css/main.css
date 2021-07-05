@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body, html {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+p, a, h1, ul, li, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+
+  width: 100%;
+  height: 70px;
+
+  left: 0;
+  top: 0;
+
+  background-color: transparent;
+
+  color: white;
+
+  display: grid;
+
+  grid-template-columns: 300px auto 300px;
+
+  z-index: 100;
+
+  transition: all .3s;
+}
+
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.904) !important;
+  box-shadow: rgba(149, 157, 165, 0.025) 0px 8px 24px;
+}
+
+nav .logo {
+  width: 200px;
+
+  cursor: pointer;
+}
+
+nav .center {
+  margin: auto !important;
+}
+
+nav ul li {
+  display: inline-block;
+
+  margin: 0 20px 0 20px;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition: all .2s;
+}
+
+nav ul { padding-right: 10px; }
+
+nav ul li:not(nav ul .active):hover {
+  font-weight: bold;
+  color: #6495ED;
+}
+
+nav ul .active {
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+
+  opacity: .7;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+header .wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: center;
+
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+header .wrapper h1 {
+  z-index: 10;
+
+  font-weight: 600;
+
+  font-size: 60px;
+
+  width: 900px;
+
+  text-align: center;
+
+  font-family: 'Manrope';
+}
+
+header .scroll {
+  position: absolute;
+
+  bottom: 80px;
+
+  width: 100%;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+section {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 200px 350px 200px 350px;
+}
+
+section * {
+  font-family: 'Manrope';
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+section .subtitle {
+  color: #4e87f0;
+  font-size: 17px;
+  font-family: 'Roboto';
+  margin-top: 2px;
+}
+
+.services {
+  background-color: rgba(0, 0, 0, 0.979);
+
+  color: white;
+}
+
+.services .grid {
+  width: 100%;
+  max-height: 300px;
+
+  margin-top: 100px;
+
+  display: grid;
+
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 50px;
+
+  overflow: hidden;
+}
+
+.services .headline {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.services .headline span {
+  color: #6495ed;
+  margin-right: 10px;
+}
+
+.services .content {
+  margin-top: 20px;
+}
+
+.services .content, .services .additional-info {
+  font-family: 'Roboto' !important;
+
+  font-size: 18px;
+
+  color: rgba(255,255,255, .4);
+
+  word-wrap: break-word;
+  line-height: 2rem;
+}
+
+.services .additional-info {
+  position: absolute;
+
+  bottom: 100px;
+  left: 0;
+
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio {
+  background-color: #eff0f0;
+}
+
+.portfolio .projects {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background-color: red;
+}
+
+.portfolio .projects div {
+  border: solid 1px blue;
+}
