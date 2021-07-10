@@ -1,3 +1,3 @@
-export default {
-  fetch: require('./api/fetch')
-}
+import fetch from './api/fetch';
+
+export { fetch }

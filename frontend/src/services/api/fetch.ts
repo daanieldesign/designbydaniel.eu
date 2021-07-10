@@ -1,4 +1,4 @@
-export const api = ( uri: string, method: string = 'GET', body: any = null, headers: any = { 'content-type': 'application/json' } ) =>
+export default ( uri: string, method: string = 'GET', body: any = null, headers: any = { 'content-type': 'application/json' } ) =>
   new Promise((resolve, reject) => {
     fetch('http://localhost:5000/' + uri, {
       method,

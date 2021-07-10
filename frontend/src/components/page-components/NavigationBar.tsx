@@ -12,8 +12,10 @@ const NavigationBar = () => {
         <li href="#services">Služby</li>
         {/* @ts-ignore */}
         <li href="#portfolio">Portfolio</li>
-        <li>O mne</li>
-        <li>Kontakt</li>
+        {/* @ts-ignore */}
+        <li href="#about-me">O mne</li>
+        {/* @ts-ignore */}
+        <li href="#contact">Kontakt</li>
       </ul>
 
       <div className="language-change center">

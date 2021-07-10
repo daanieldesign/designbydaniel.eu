@@ -1,23 +1,32 @@
 import Card from '../portfolio/Card';
+import PlaceholderCard from '../portfolio/PlaceholderCard';
+import {  useState, useEffect } from 'react';
+import { fetch } from '../../services';
 
 const Portfolio = () => {
+  const [ cards, setCards ] = useState<string | null>(null);
+  useEffect(() => {
+    setTimeout(() => {
+    }, 10 * 1000);
+  }, []);
+
   return (
     <section className="portfolio">
       <h2>Portfolio</h2>
       <p className="subtitle">Lorem ipsum dolor sit amet.</p>
 
       <div className="projects">
-        <Card />
-        <div>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis minima dignissimos harum a quam ea fugit, quas ducimus quo, veritatis hic vel eum? Consectetur hic earum, nesciunt aliquam adipisci doloribus maiores. Nobis, ipsam quam. Vitae doloremque perferendis aperiam culpa totam velit recusandae ad blanditiis excepturi, sed laudantium beatae nostrum voluptatibus cumque doloribus? Necessitatibus temporibus adipisci reprehenderit voluptatem quidem, laboriosam facere magnam molestiae voluptates quam quaerat error autem id suscipit quisquam dignissimos iste nostrum consequuntur consectetur sunt. Provident accusamus adipisci repellat nesciunt consequatur natus corporis fugiat tempora, sed ex nostrum autem dolorem laboriosam soluta aliquam commodi culpa voluptate quod eum minus!
-        </div>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {cards === null ?
+          <>
+            <div className="projects-wrapper">
+              <PlaceholderCard />
+              <PlaceholderCard />
+              <PlaceholderCard />
+            </div>
+            <div className="placeholder-button skeleton-anim-light" />
+          </> :
+          <Card />
+        }
       </div>
     </section>
   );

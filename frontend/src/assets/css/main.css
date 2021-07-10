@@ -7,6 +7,8 @@ body, html {
 
   margin: 0;
   padding: 0;
+
+  scroll-behavior: smooth;
 }
 
 * {
@@ -14,7 +16,7 @@ body, html {
   font-family: 'Roboto';
 }
 
-p, a, h1, ul, li, h2 {
+p, a, h1, ul, li, h2, h3 {
   margin: 0;
   padding: 0;
 }
@@ -171,6 +173,9 @@ section .subtitle {
 .services {
   background-color: rgba(0, 0, 0, 0.979);
 
+  position: relative;
+  z-index: 30;
+
   color: white;
 }
 
@@ -203,7 +208,7 @@ section .subtitle {
 }
 
 .services .content, .services .additional-info {
-  font-family: 'Roboto' !important;
+  font-family: 'Roboto';
 
   font-size: 18px;
 
@@ -231,12 +236,154 @@ section .subtitle {
   width: 100%;
   height: 100%;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
 
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
 }
 
-.portfolio .projects div {
-  border: solid 1px blue;
+.projects-wrapper {
+  width: 102.5%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+
+  place-items: center;
+}
+
+.placeholder-card {
+  width: 360px;
+  height: 280px;
+
+  position: relative;
+
+  border-radius: 8px;
+
+  background-color: rgb(194, 194, 194);
+
+  box-shadow: rgba(149, 157, 165, 0.116) 0px 8px 24px;
+  
+  z-index: 30;
+}
+
+.skeleton-anim-light {
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, rgb(199, 199, 199) 8%, #cfcfcf 38%, rgb(199, 199, 199) 54%);
+  background-size: 1000px 640px;
+}
+
+.skeleton-anim-dark {
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, rgb(170, 170, 170) 8%, #c0c0c0 38%, rgb(170, 170, 170) 54%);
+  background-size: 1000px 640px;
+}
+
+.placeholder-card-text {
+  width: 360px;
+  height: 100px;
+
+  z-index: 20;
+
+  position: relative;
+  top: -10px;
+
+  background-color: white;
+
+  box-shadow: rgba(149, 157, 165, 0.116) 0px 8px 24px;
+
+  padding-top: 10px;
+
+  margin-bottom: 25px;
+}
+
+.placeholder-card-text div {
+  background-color: rgb(182, 182, 182);
+}
+
+.placeholder-card-text .headline {
+  width: 150px; 
+  height: 22px;
+
+  margin: 20px 0 0 20px;
+}
+
+.placeholder-card-text .paragraph {
+  width: 300px; 
+  height: 16px;
+
+  margin: 10px 0 0 20px;
+}
+
+.placeholder-button {
+  width: 200px;
+  height: 60px;
+
+  border-radius: 8px;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  margin-top: 25px;
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.979);
+}
+
+#to-top {
+  position: fixed;
+
+  right: 50px;
+  bottom: 50px;
+
+  width: 65px;
+  height: 65px;
+
+  display: none;
+
+  border-radius: 50%;
+
+  box-shadow: rgba(68, 68, 68, 0.2) 0px 0px 24px;
+
+  background-color: rgba(0, 0, 0, 0.979);
+
+  z-index: 20;
+
+  color: white;
+}
+
+#to-top.appear {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#to-top svg {
+  display: block;
+
+  width: 25px;
+  height: 25px;
+}
+
+@keyframes placeHolderShimmer{
+  0%{
+      background-position: -468px 0
+  }
+  100%{
+      background-position: 468px 0
+  }
 }
