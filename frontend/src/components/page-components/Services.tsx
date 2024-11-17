@@ -2,22 +2,22 @@ const Services = () => {
   return (
     <section className="services">
       <h2>Služby</h2>
-      <p className="subtitle">Lorem ipsum dolor sit amet.</p>
+      <p className="subtitle">Nabídnu Vám tyhle služby.</p>
       <div className="grid">
         <div>
           <p className="headline"><span>01.</span> Grafický Design</p>
-          <p className="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam debitis porro quaerat beatae expedita nemo ipsum quo odio a fuga.</p>
+          <p className="content">Potřebujete silný vizuální dojem pro vaše podnikání? Náš grafický design vám pomůže vytvořit nezapomenutelný obraz vaší značky. Ať už jde o logo, marketingové materiály, webové stránky nebo sociální média, vytváříme návrhy, které přitahují pozornost a vyjadřují jedinečnost vaší společnosti.</p>
         </div>
         <div>
           <p className="headline"><span>02.</span> Animace</p>
-          <p className="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora voluptatum ad animi nemo, ipsam doloribus obcaecati at ex eum aliquid magni, odio eveniet quasi. Tempore doloribus exercitationem explicabo eius sapiente, voluptatibus nulla eveniet aspernatur quas rerum enim provident, fuga ratione minus magni numquam ut assumenda nisi accusantium. Illum, aliquid? Consectetur?</p>
+          <p className="content">Chcete, aby vaše zpráva byla zapamatovatelná a poutavá? Naše animace přivedou vaši komunikaci k životu. Ať už se jedná o reklamní spoty, vysvětlující videa nebo kreativní obsah pro sociální sítě, animace jsou skvělým způsobem, jak zaujmout diváky a zjednodušit složité informace.</p>
         </div>
-        <div >
+        <div>
           <p className="headline"><span>03.</span> Střih Videa</p>
-          <p className="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolores enim a repudiandae eligendi, quidem laudantium cumque amet doloribus quos.</p>
+          <p className="content">Video je jedním z nejúčinnějších nástrojů pro komunikaci s vašimi zákazníky. Ať už potřebujete reklamní video, produktovou prezentaci nebo firemní dokument, náš střih videa zajistí, že váš příběh bude plynulý, profesionální a emotivní.</p>
         </div>
       </div>
-      <p className="additional-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, magni.</p>
+      <p className="additional-info">Za každou práci od nového klienta požaduji minimálně 50 % předem z odhadované částky, jako zálohu.</p>
     </section>
   );
 }

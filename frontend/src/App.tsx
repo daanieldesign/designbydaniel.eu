@@ -10,29 +10,29 @@ import Services from './components/page-components/Services';
 import Portfolio from './components/page-components/Portfolio';
 import AboutMe from './components/page-components/AboutMe';
 import Contact from './components/page-components/Contact';
-
 import ToTop from './components/page-components/ToTop';
+import Footer from './components/page-components/Footer'; // Importujte Footer
 
 function App() {
-  useEffect(bundle);
+    useEffect(bundle);
 
-  return (
-    <>
-      <NavigationBar />
-      <Anchor name="home" />
-      <Header />
-      <Anchor name="services" />
-      <Services />
-      <Anchor name="portfolio" />
-      <Portfolio />
-      <Anchor name="about-me" />
-      <AboutMe />
-      <Anchor name="contact" />
-      <Contact />
-
-      <ToTop />
-    </>
-  );
+    return (
+        <>
+            <NavigationBar />
+            <Anchor name="home" />
+            <Header />
+            <Anchor name="services" />
+            <Services />
+            <Anchor name="portfolio" />
+            <Portfolio />
+            <Anchor name="about-me" />
+            <AboutMe />
+            <Anchor name="contact" />
+            <Contact />
+            <ToTop />
+            <Footer /> {/* Přidejte Footer na konec */}
+        </>
+    );
 }
 
 export default App;

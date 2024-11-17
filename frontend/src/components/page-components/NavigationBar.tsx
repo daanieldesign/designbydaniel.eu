@@ -7,13 +7,13 @@ const NavigationBar = () => {
       
       <ul className="center">
         {/* @ts-ignore */}
-        <li className="active" href="#home">Domov</li>
+        <li className="active" href="#home">Domů</li>
         {/* @ts-ignore */}
         <li href="#services">Služby</li>
         {/* @ts-ignore */}
         <li href="#portfolio">Portfolio</li>
         {/* @ts-ignore */}
-        <li href="#about-me">O mne</li>
+        <li href="#about-me">O mně</li>
         {/* @ts-ignore */}
         <li href="#contact">Kontakt</li>
       </ul>

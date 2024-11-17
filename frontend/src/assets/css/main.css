@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+
 body, html {
   width: 100%;
   height: 100%;
@@ -20,6 +21,53 @@ p, a, h1, ul, li, h2, h3 {
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --font-1: "Roboto", sans-serif;
+  --font-2: "Manrope", sans-serif;
+  --footer-background: #000;
+  --footer-text-color: #fff;
+  --button-background: #007bff; /* Světle modrá barva */
+  --button-text-color: #fff;
+}
+
+.footer {
+  background-color: var(--footer-background);
+  color: var(--footer-text-color);
+  padding: 40px;
+  text-align: center;
+  font-family: var(--font-1);
+}
+
+.footer-container h2 {
+  font-family: var(--font-2);
+  margin-bottom: 10px;
+}
+
+.footer-container p {
+  margin-bottom: 20px;
+}
+
+.email-button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-credits {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-credits a {
+  color: var(--footer-text-color);
+  text-decoration: none;
+}
+
 
 nav {
   position: fixed;
@@ -98,8 +146,6 @@ header .overlay {
   height: 100%;
 
   background-color: black;
-
-  opacity: .7;
 
   position: absolute;
 
@@ -327,6 +373,78 @@ section .subtitle {
 
   margin: 10px 0 0 20px;
 }
+.placeholder-card-image {
+  width: 100%;
+  height: 150px; /* nebo požadovaná výška obrázku */
+  background-color: #ddd; /* Barva skeleton efektu */
+  border-radius: 8px; /* Pokud chceš zaoblené rohy */
+  margin-bottom: 10px; /* Mezera pod obrázkem */
+}
+
+.instagram-button {
+  background-color: black;
+  color: white; /* Bílý text */
+  border: none;
+  border-radius: 15px; /* Zaoblené rohy */
+  padding: 15px 20px; /* Prostor kolem textu */
+  font-size: 16px; /* Velikost písma */
+  font-weight: bold; /* Tučný text */
+  cursor: pointer; /* Ukazatel myši */
+  transition: background-color 0.3s ease; /* Plynulý přechod na hover */
+  margin: 20px auto; /* Střed tlačítka */
+  display: block; /* Centrum na stránce */
+  text-decoration: none;
+}
+
+.instagram-button:hover {
+  background-color: #6495ed;
+}
+
+a:link,
+a:visited {
+  text-decoration: none; /* Odstranění podtržení z odkazů */
+}
+
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px; /* Stejná výška jako skeleton */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.card-content p {
+  margin: 0;
+  color: #666;
+}
+
+
+.placeholder-image {
+  width: 100%;
+  height: 150px; /* Nastav vhodnou výšku podle tvého designu */
+  background-color: #ddd;
+  border-radius: 8px; /* Zaoblené rohy */
+  margin-bottom: 10px; /* Mezera pod obrázkem */
+}
+
 
 .placeholder-button {
   width: 200px;

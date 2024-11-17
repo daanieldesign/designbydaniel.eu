@@ -1,8 +1,6 @@
-import header from '../../assets/images/header.jpg';
-
 const Header = () => {
   return (
-    <header style={{backgroundImage: `url(${header})`}}>
+    <header>
       <div className="overlay"></div>
       <div className="wrapper">
         <h1>
@@ -11,7 +9,7 @@ const Header = () => {
         </h1>
       </div>
 
-      <p className="scroll">Scroll To Continue</p>
+      <p className="scroll">Šoupni kolečkem!</p>
     </header>
   );
 }
